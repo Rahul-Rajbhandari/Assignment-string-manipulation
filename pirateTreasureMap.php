@@ -9,11 +9,14 @@
     <h2>Pirate Treasure Map</h2>
     <?php
     $clue = "find the hidden treasure at the golden island";
+    echo "Clue -> " . $clue;
+    echo "<br>";
     $arr = explode(" ",$clue);
 
     // var_dump($arr);
     // print_r( explode(" ",$clue));
 
+    echo "New Clue -> ";
     foreach($arr as $element){
         if ($element =="golden"){
             $element= "mystic";
