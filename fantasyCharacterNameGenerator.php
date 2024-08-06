@@ -9,9 +9,11 @@
     <h1>Fantasy Character Name Generator</h1>
     <?php
     $characterNames =  "Gandalf,Aragorn,Legolas";
+    echo "Original String -> " . $characterNames;
+    echo "<br>";
     $array = explode(",",$characterNames);
     $join = implode("*",$array);
-    echo strtolower($join);
+    echo "Final String -> ". strtolower($join);
     ?>
 </body>
 </html>
